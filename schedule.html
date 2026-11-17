@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>2027 Schedule | Black Rose Rollers</title>
+<meta name="description" content="The 2027 bout schedule for Black Rose Rollers, an open-gender flat track roller derby league in Hanover, PA. Home bouts at Ballyhoo, plus away games and tournaments.">
+<meta name="theme-color" content="#700014">
+<meta property="og:title" content="Black Rose Rollers — 2027 Schedule">
+<meta property="og:description" content="Home and away bouts for the 2027 season, including the Among the Thorns tournament.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blackroserollers.org/schedule.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Black Rose tokens v1.0 — fixed brand composition, oxblood-led, alternating light/dark */
+:root{
+  --oxblood:#700014; --gilt:#D0AC38; --night:#180C10;
+  --rose:#DBBFC4; --mauve:#B78089; --champagne:#E7D59B;
+  --ink:#010104; --smoke:#35353B; --grey:#82828D; --mist:#B6B5C3; --eggshell:#EAE9FA; --porcelain:#FAF9FE;
+}
+/* section themes set local vars */
+.t-light{--bg:var(--porcelain);--text:var(--ink);--t2:var(--smoke);--hair:var(--mist);--brand:var(--oxblood);--markf:none;--cardbg:#fff;--cardline:var(--mist);--link:var(--oxblood)}
+.t-dark{--bg:var(--ink);--text:var(--porcelain);--t2:var(--mist);--hair:var(--smoke);--brand:var(--porcelain);--markf:invert(1) brightness(1.12);--cardbg:var(--smoke);--cardline:var(--smoke);--link:var(--porcelain)}
+.t-blood{--bg:var(--oxblood);--text:var(--porcelain);--t2:var(--champagne);--hair:rgba(250,249,254,.28);--brand:var(--porcelain);--markf:invert(1) brightness(1.12);--cardbg:#5c0010;--cardline:rgba(250,249,254,.2);--link:var(--porcelain)}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--porcelain);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:500;font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"PT Serif",Georgia,serif;font-weight:700;margin:0}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem}
+.band-sec{background:var(--bg);color:var(--text)}
+.display{font-size:clamp(40px,7vw,56px);line-height:1.1;letter-spacing:-.01em}
+h2{font-size:clamp(26px,4.5vw,30px);line-height:1.2}
+h3{font-size:20px;line-height:1.3}
+.eyebrow{font-family:"DM Sans";font-weight:500;font-size:14px;letter-spacing:.02em;text-transform:uppercase;color:var(--t2)}
+.eyebrow .dot{color:var(--gilt)}
+.skip{position:absolute;left:-999px;top:0;background:var(--oxblood);color:var(--porcelain);padding:.6rem 1rem;z-index:20}
+.skip:focus{left:0}
+
+header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--hair)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0}
+.brandlink{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.brandlink img{width:40px;height:40px;object-fit:contain;filter:var(--markf)}
+.word{font-family:"PT Serif";font-weight:700;font-size:21px;color:var(--brand);letter-spacing:-.01em;white-space:nowrap}
+nav.main{display:flex;gap:1.4rem;align-items:center}
+nav.main a{font-size:15px;text-decoration:none;color:var(--text);padding:.2rem 0;border-bottom:2px solid transparent}
+nav.main a:hover,nav.main a:focus{border-bottom-color:var(--oxblood)}
+.utility{display:flex;align-items:center;gap:.4rem}
+.icon{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border:1px solid var(--hair);border-radius:50%;color:var(--text);text-decoration:none}
+.icon:hover,.icon:focus{border-color:var(--oxblood);color:var(--oxblood)}
+.icon svg{width:18px;height:18px;fill:currentColor}
+.menu-btn{display:none;background:none;border:1px solid var(--hair);border-radius:6px;width:42px;height:42px;color:var(--text);cursor:pointer;align-items:center;justify-content:center}
+.menu-btn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.menu-btn:hover,.menu-btn:focus{border-color:var(--oxblood);color:var(--oxblood)}
+@media (max-width:860px){
+  nav.main{position:fixed;inset:0 0 0 auto;width:min(78vw,320px);transform:translateX(100%);
+    transition:transform .25s ease;background:var(--ink);color:var(--porcelain);
+    flex-direction:column;align-items:flex-start;gap:0;padding:5rem 1.6rem 2rem;
+    border-left:1px solid var(--smoke);z-index:30;overflow-y:auto}
+  nav.main a{color:var(--porcelain);font-size:19px;width:100%;padding:.9rem 0;border-bottom:1px solid var(--smoke)}
+  nav.main a:hover,nav.main a:focus{border-bottom-color:var(--smoke);color:var(--gilt)}
+  body.nav-open nav.main{transform:translateX(0)}
+  body.nav-open .nav-scrim{opacity:1;pointer-events:auto}
+  .menu-btn{display:inline-flex}
+  .word{font-size:18px}
+}
+.nav-scrim{position:fixed;inset:0;background:rgba(1,1,4,.55);opacity:0;pointer-events:none;transition:opacity .25s ease;z-index:20}
+.nav-close{display:none;position:absolute;top:1rem;right:1rem;background:none;border:0;color:var(--porcelain);cursor:pointer;padding:.4rem}
+.nav-close svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+@media (max-width:860px){.nav-close{display:block}}
+@media (prefers-reduced-motion:reduce){nav.main,.nav-scrim{transition:none}}
+
+section{padding:3.4rem 0}
+.head{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem}
+.gilt{width:44px;height:3px;background:var(--gilt);border:0;margin:0}
+.lede{max-width:60ch;color:var(--t2)}
+
+.act{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:"DM Sans";font-weight:500;font-size:16px;text-decoration:none;padding:.8rem 1.4rem;border-radius:2px;border:2px solid transparent;cursor:pointer}
+.btn.primary{background:var(--oxblood);color:var(--porcelain);border-color:var(--oxblood)}
+.btn.primary:hover,.btn.primary:focus{filter:brightness(1.12)}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--text)}
+.btn.ghost:hover,.btn.ghost:focus{border-color:var(--gilt);color:var(--gilt)}
+.btn.invert{background:var(--porcelain);color:var(--oxblood);border-color:var(--porcelain)}
+.btn.invert:hover,.btn.invert:focus{filter:brightness(.94)}
+
+.hero{padding:4rem 0 3.4rem}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:2rem;align-items:center}
+.hero .display{margin:.6rem 0 1rem;max-width:16ch}
+.hero .display b{color:var(--oxblood)}
+.hero p.lead{max-width:52ch;color:var(--t2);margin:0 0 2rem}
+.hero-mark{justify-self:center}
+.hero-mark img{width:min(300px,72vw);filter:var(--markf)}
+@media (max-width:820px){.hero-grid{grid-template-columns:1fr}.hero-mark{order:-1;justify-self:start}.hero-mark img{width:180px}}
+
+.aboutgrid{display:grid;grid-template-columns:1.3fr 1fr;gap:2rem}
+@media (max-width:720px){.aboutgrid{grid-template-columns:1fr}}
+.mission{font-family:"PT Serif";font-weight:700;font-size:clamp(22px,3.4vw,26px);line-height:1.3;color:var(--oxblood);max-width:26ch;margin:0}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+@media (max-width:760px){.cards{grid-template-columns:1fr}}
+.card{background:var(--cardbg);border:1px solid var(--cardline);border-radius:4px;padding:1.4rem}
+.card .tag{display:inline-block;width:30px;height:4px;background:var(--oxblood);margin-bottom:1rem}
+.card h3{margin-bottom:.5rem}
+.card p{margin:0;color:var(--t2);font-size:16px;line-height:1.5}
+
+.teams{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+@media (max-width:760px){.teams{grid-template-columns:1fr}}
+.team{border:1px solid var(--cardline);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;background:var(--cardbg)}
+.logo-tile{background:var(--porcelain);display:flex;align-items:center;justify-content:center;padding:1.6rem;height:190px}
+.logo-tile img{max-height:100%;width:auto;object-fit:contain}
+.team .body{padding:1.2rem 1.3rem 1.4rem}
+.team h3{margin-bottom:.4rem;color:var(--text)}
+.team p{margin:0 0 .8rem;color:var(--t2);font-size:15px;line-height:1.5}
+.team a{font-size:15px;font-weight:500;text-decoration:none;color:var(--link);border-bottom:2px solid var(--gilt)}
+
+.cta-card{background:var(--rose);color:var(--night);border-radius:4px;padding:2.2rem 1.8rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.2rem}
+.cta-card h2{color:var(--night)}
+.cta-card p{color:var(--night);opacity:.82;margin:.4rem 0 0;max-width:44ch}
+
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+@media (max-width:640px){.contact{grid-template-columns:1fr}}
+.rows{display:grid;gap:0}
+.row{display:grid;grid-template-columns:160px 1fr;gap:1.5rem;padding:1.2rem 0;border-top:1px solid var(--hair)}
+.row:last-child{border-bottom:1px solid var(--hair)}
+.row .v{color:var(--t2)}
+.row .v a{color:var(--oxblood);text-decoration:none;border-bottom:1px solid var(--gilt)}
+@media (max-width:640px){.row{grid-template-columns:1fr;gap:.3rem}}
+.socialrow{display:flex;gap:.6rem;margin-top:.4rem}
+
+footer{padding:2.6rem 0 3rem;font-size:14px}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.2rem;align-items:flex-start}
+.foot-brand{display:flex;align-items:center;gap:.6rem}
+.foot-brand img{width:34px;height:34px;object-fit:contain;filter:var(--markf)}
+.foot-links{display:flex;flex-wrap:wrap;gap:1.2rem}
+.foot-links a{color:var(--t2);text-decoration:none;border-bottom:1px solid transparent}
+.foot-links a:hover,.foot-links a:focus{color:var(--text);border-bottom-color:var(--gilt)}
+.foot-note{margin-top:1.4rem;letter-spacing:.02em;color:var(--t2)}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:3px}
+@media (max-width:600px){
+  html{font-size:16px}
+  .wrap{padding:0 1.15rem}
+  section{padding:2.6rem 0}
+  .hero{padding:2.6rem 0 2.4rem}
+  .display{font-size:clamp(32px,9vw,44px)}
+  .act .btn{flex:1 1 auto;justify-content:center}
+  .cta-card{padding:1.6rem 1.3rem}
+  .cta-card .btn{width:100%;justify-content:center}
+  .logo-tile{height:150px;padding:1.2rem}
+  .foot-top{flex-direction:column}
+}
+</style>
+
+<style>
+.title-band{padding:3rem 0 2.6rem}
+.title-band .display{margin:.5rem 0 .6rem}
+.title-band .sub{color:var(--champagne);margin:0;max-width:60ch}
+.sched-meta{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin:1.2rem 0 0;font-size:14px;color:var(--champagne)}
+.legend{display:flex;flex-wrap:wrap;gap:1.4rem;align-items:center;margin:0 0 2rem;font-size:14px;color:var(--t2)}
+.legend span{display:inline-flex;align-items:center;gap:.4rem}
+.key{display:inline-block;width:14px;height:14px;border-radius:3px}
+.key.home{background:var(--oxblood)}
+.key.away{background:transparent;border:2px solid var(--mist)}
+.month{font-family:"PT Serif";font-weight:700;font-size:22px;margin:2.4rem 0 .8rem;padding-bottom:.4rem;border-bottom:2px solid var(--ink)}
+.month:first-of-type{margin-top:0}
+.event{display:grid;grid-template-columns:92px 1fr auto;gap:1.1rem;align-items:start;
+  padding:1.1rem 1.2rem;border:1px solid var(--cardline);border-left:4px solid var(--mist);
+  border-radius:4px;background:var(--cardbg);margin-bottom:.8rem}
+.event.home{border-left-color:var(--oxblood)}
+.event.info{opacity:.72}
+.date-badge{text-align:center;line-height:1.05}
+.date-badge .m{font-family:"DM Sans";font-weight:500;text-transform:uppercase;font-size:12px;letter-spacing:.04em;color:var(--oxblood)}
+.date-badge .d{font-family:"PT Serif";font-weight:700;font-size:26px;color:var(--text)}
+.date-badge .d.range{font-size:17px;line-height:1.15;margin-top:.1rem}
+.ev-body h3{font-size:17px;margin:0 0 .25rem}
+.ev-body .venue{font-size:14px;color:var(--t2);margin:0 0 .5rem}
+.ev-body .tickets{font-size:13px;color:var(--t2);font-style:italic;margin:.4rem 0 0}
+.pills{display:flex;flex-wrap:wrap;gap:.4rem}
+.pill{font-size:11px;font-weight:500;letter-spacing:.03em;text-transform:uppercase;
+  padding:.18rem .5rem;border-radius:999px;border:1px solid var(--cardline);color:var(--t2)}
+.pill.sanc{border-color:var(--oxblood);color:var(--oxblood)}
+.ev-meta{display:flex;flex-direction:column;align-items:flex-end;gap:.4rem;white-space:nowrap}
+.badge{font-size:12px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;padding:.22rem .55rem;border-radius:3px}
+.badge.home{background:var(--oxblood);color:var(--porcelain)}
+.badge.away{border:1px solid var(--mist);color:var(--t2)}
+.status{font-size:12px;letter-spacing:.03em;text-transform:uppercase;color:var(--grey)}
+.status.hold{color:#9a6b00;font-weight:500}
+.tourney{border-left-color:var(--gilt);border-left-width:4px}
+.tourney .star{color:var(--gilt)}
+.teaminfo{font-size:13px;color:var(--t2);margin:.4rem 0 0}
+@media (max-width:640px){
+  .event{grid-template-columns:64px 1fr;gap:.8rem .9rem}
+  .ev-meta{grid-column:2;flex-direction:row;align-items:center;gap:.6rem}
+  .date-badge .d{font-size:22px}
+}
+</style>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="t-dark">
+  <div class="wrap bar">
+    <a class="brandlink" href="index.html" aria-label="Black Rose Rollers home">
+      <img src="assets/logos/black-rose-mark.png" alt="Black Rose Rollers logo">
+      <span class="word">Black Rose Rollers</span>
+    </a>
+    <nav class="main" id="navmenu" aria-label="Primary">
+      <button class="nav-close" id="navclose" type="button" aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <a href="index.html#about">About</a><a href="index.html#teams">Teams</a><a href="index.html#involved">Get involved</a><a href="schedule.html" aria-current="page">Schedule</a><a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="utility">
+      <a class="icon" href="https://www.instagram.com/blackroserollers/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.22 1 .48 1.4.9.42.4.68.8.9 1.4.17.4.36 1 .42 2.2.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.8-.42 2.2a3.8 3.8 0 0 1-.9 1.4c-.4.42-.8.68-1.4.9-.4.17-1 .36-2.2.42-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.8-.25-2.2-.42a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.17-.4-.36-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.8.42-2.2.22-.6.48-1 .9-1.4.4-.42.8-.68 1.4-.9.4-.17 1-.36 2.2-.42C8.4 2.2 8.8 2.2 12 2.2Zm0 1.98c-3.15 0-3.52.01-4.76.07-.92.04-1.42.2-1.75.33-.44.17-.75.37-1.08.7-.33.33-.53.64-.7 1.08-.13.33-.29.83-.33 1.75-.06 1.24-.07 1.6-.07 4.76s.01 3.52.07 4.76c.04.92.2 1.42.33 1.75.17.44.37.75.7 1.08.33.33.64.53 1.08.7.33.13.83.29 1.75.33 1.24.06 1.6.07 4.76.07s3.52-.01 4.76-.07c.92-.04 1.42-.2 1.75-.33.44-.17.75-.37 1.08-.7.33-.33.53-.64.7-1.08.13-.33.29-.83.33-1.75.06-1.24.07-1.6.07-4.76s-.01-3.52-.07-4.76c-.04-.92-.2-1.42-.33-1.75a2.9 2.9 0 0 0-.7-1.08 2.9 2.9 0 0 0-1.08-.7c-.33-.13-.83-.29-1.75-.33-1.24-.06-1.6-.07-4.76-.07Zm0 3.37a4.45 4.45 0 1 1 0 8.9 4.45 4.45 0 0 1 0-8.9Zm0 7.34a2.89 2.89 0 1 0 0-5.78 2.89 2.89 0 0 0 0 5.78Zm5.67-7.54a1.04 1.04 0 1 1-2.08 0 1.04 1.04 0 0 1 2.08 0Z"/></svg></a>
+      <a class="icon" href="https://www.facebook.com/blackroserollers/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.87.24-1.46 1.49-1.46h1.6V4.46c-.28-.04-1.23-.12-2.34-.12-2.32 0-3.9 1.42-3.9 4.02v2.24H7.9v3h2.55V21h3.05Z"/></svg></a>
+      <button class="menu-btn" id="menubtn" type="button" aria-label="Open menu" aria-controls="navmenu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="nav-scrim" id="navscrim"></div>
+<main id="main">
+
+<div class="band-sec t-blood title-band">
+  <div class="wrap">
+    <p class="eyebrow"><span class="dot">&#9679;</span>&nbsp; 2027 Season</p>
+    <h1 class="display">Bout schedule</h1>
+    <p class="sub">Home bouts at Ballyhoo, away games across the region, and our Among the Thorns tournament. Home games are the ones to come cheer at.</p>
+    <div class="sched-meta"><span>Updated November 5, 2026</span><span>Dates are being evaluated and confirmed, so some may still shift.</span></div>
+  </div>
+</div>
+
+<section class="band-sec t-light">
+  <div class="wrap">
+    <div class="legend">
+      <span><i class="key home"></i> Home bout (Ballyhoo)</span>
+      <span><i class="key away"></i> Away game</span>
+      <span class="pill sanc">sanctioned</span>
+      <span class="pill">regulation</span>
+    </div>
+    <div class="month">February 2027</div><div class="event info">
+  <div class="date-badge"><div class="m">Feb</div><div class="d range">18–21</div></div>
+  <div class="ev-body"><h3>Y'Allstars — Thibodaux, LA</h3><p class="venue">Not a league event; Black Rose skaters may be playing.</p></div>
+  <div class="ev-meta"><span class="badge away">Away</span></div>
+</div><div class="month">March 2027</div><div class="event home">
+  <div class="date-badge"><div class="m">Mar</div><div class="d">6</div></div>
+  <div class="ev-body"><h3>Grime + Riveters vs Lansing Roller Derby A &amp; B</h3><p class="venue">Double header at Ballyhoo (home)</p><div class="pills"><span class="pill sanc">sanctioned</span><span class="pill ">regulation</span><span class="pill ">double header</span></div><p class="tickets">Ticket details announced closer to the date.</p></div>
+  <div class="ev-meta"><span class="badge home">Home</span><span class="status">Confirmed</span></div>
+</div><div class="event">
+  <div class="date-badge"><div class="m">Mar</div><div class="d range">19–21</div></div>
+  <div class="ev-body"><h3>All-Stars at Cactus Cup</h3><p class="venue">Hosted by Arizona Roller Derby</p></div>
+  <div class="ev-meta"><span class="badge away">Away</span><span class="status">Confirmed</span></div>
+</div><div class="month">April 2027</div><div class="event">
+  <div class="date-badge"><div class="m">Apr</div><div class="d range">23–25</div></div>
+  <div class="ev-body"><h3>All-Stars at Southern Discomfort</h3><p class="venue">Hosted by Columbia Quad Squad</p><p class="teaminfo">Traveling with the Juniors.</p></div>
+  <div class="ev-meta"><span class="badge away">Away</span><span class="status">Confirmed</span></div>
+</div><div class="month">May 2027</div><div class="event">
+  <div class="date-badge"><div class="m">May</div><div class="d">2</div></div>
+  <div class="ev-body"><h3>Grime + Riveters vs HARD A &amp; B</h3><p class="venue">Double header away at Harrisburg</p><div class="pills"><span class="pill sanc">sanctioned</span><span class="pill ">regulation</span><span class="pill ">double header</span></div></div>
+  <div class="ev-meta"><span class="badge away">Away</span><span class="status">Confirmed</span></div>
+</div><div class="event home">
+  <div class="date-badge"><div class="m">May</div><div class="d">15</div></div>
+  <div class="ev-body"><h3>Grime + Riveters vs NOVA Roller Derby A &amp; B</h3><p class="venue">Double header at Ballyhoo (home)</p><div class="pills"><span class="pill sanc">sanctioned</span><span class="pill ">regulation</span><span class="pill ">double header</span></div><p class="tickets">Ticket details announced closer to the date.</p></div>
+  <div class="ev-meta"><span class="badge home">Home</span><span class="status">Confirmed</span></div>
+</div><div class="month">June 2027</div><div class="event">
+  <div class="date-badge"><div class="m">Jun</div><div class="d">26</div></div>
+  <div class="ev-body"><h3>Riveters vs SCSQ's Queen B's</h3><p class="venue">Away at Pottsville</p></div>
+  <div class="ev-meta"><span class="badge away">Away</span><span class="status">Confirmed</span></div>
+</div><div class="month">August 2027</div><div class="event">
+  <div class="date-badge"><div class="m">Aug</div><div class="d">14</div></div>
+  <div class="ev-body"><h3>Riveters vs Charlottesville Roller Derby</h3><p class="venue">Away at Charlottesville, VA</p><p class="teaminfo">Would travel with the Juniors.</p></div>
+  <div class="ev-meta"><span class="badge away">Away</span><span class="status hold">On hold</span></div>
+</div><div class="event">
+  <div class="date-badge"><div class="m">Aug</div><div class="d">28</div></div>
+  <div class="ev-body"><h3>Grime vs Chicago-Style Roller Derby</h3><p class="venue">Away at Chicago</p><div class="pills"><span class="pill sanc">sanctioned</span></div></div>
+  <div class="ev-meta"><span class="badge away">Away</span><span class="status">Confirmed</span></div>
+</div><div class="month">September 2027</div><div class="event home tourney">
+  <div class="date-badge"><div class="m">Sep</div><div class="d range">24–26</div></div>
+  <div class="ev-body"><h3><span class='star'>&#9733;</span> Among the Thorns Tournament</h3><p class="venue">All-Stars + Grime at Ballyhoo (home)</p><p class="teaminfo">Teams confirmed: Detroit A &amp; B. Invited: Minnesota A &amp; B.</p><p class="tickets">Ticket details announced closer to the date.</p></div>
+  <div class="ev-meta"><span class="badge home">Home</span><span class="status">Confirmed</span></div>
+</div><div class="month">October 2027</div><div class="event home">
+  <div class="date-badge"><div class="m">Oct</div><div class="d">16</div></div>
+  <div class="ev-body"><h3>All-Stars &amp; Grime vs Boston</h3><p class="venue">Double header at Ballyhoo (home)</p><div class="pills"><span class="pill sanc">sanctioned</span><span class="pill ">double header</span></div><p class="tickets">Ticket details announced closer to the date.</p></div>
+  <div class="ev-meta"><span class="badge home">Home</span><span class="status">Confirmed</span></div>
+</div>
+    <p class="lede" style="margin-top:2rem">Want to come to a home bout? Ticket links go up here and on our socials ahead of each date. For anything else, reach us at <a href="mailto:BlackRosePres@gmail.com" style="color:var(--oxblood);border-bottom:1px solid var(--gilt);text-decoration:none">BlackRosePres@gmail.com</a>.</p>
+  </div>
+</section>
+</main>
+<footer class="band-sec t-dark">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand"><img src="assets/logos/black-rose-mark.png" alt="Black Rose Rollers logo"><div><div class="word" style="font-size:20px">Black Rose Rollers</div><p style="margin:.3rem 0 0;color:var(--t2)">Open-gender flat track roller derby &middot; Hanover, PA</p></div></div>
+      <div class="foot-links" aria-label="Footer links">
+        <a href="https://www.instagram.com/blackroserollers/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/blackroserollers/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://linktr.ee/black_rose_rollers" target="_blank" rel="noopener">Linktree</a>
+        <a href="https://wftda.com/wftda-leagues/black-rose-rollers/" target="_blank" rel="noopener">WFTDA</a>
+      </div>
+    </div>
+    <p class="foot-note">&copy; 2026 Black Rose Rollers. Member of the Women's Flat Track Derby Association (WFTDA).</p>
+  </div>
+</footer>
+<script>
+(function(){
+  var body=document.body,btn=document.getElementById('menubtn'),
+      close=document.getElementById('navclose'),scrim=document.getElementById('navscrim'),
+      menu=document.getElementById('navmenu');
+  function open(){body.classList.add('nav-open');btn.setAttribute('aria-expanded','true');}
+  function shut(){body.classList.remove('nav-open');btn.setAttribute('aria-expanded','false');}
+  btn&&btn.addEventListener('click',open);
+  close&&close.addEventListener('click',shut);
+  scrim&&scrim.addEventListener('click',shut);
+  menu&&menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',shut);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')shut();});
+})();
+</script>
+</body>
+</html>
